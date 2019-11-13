@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<display-name>Data</display-name>
+		
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>firstServlet</servlet-name>
+		<servlet-class>tp1.PremiereServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>firstServlet</servlet-name>
+		<url-pattern>/urlPremiereServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet2</servlet-name>
+		<servlet-class>tp1.Servlet2</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Servlet2</servlet-name>
+		<url-pattern>/result</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet3</servlet-name>
+		<servlet-class>tp1.Servlet3</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Servlet3</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Servlet4</servlet-name>
+		<servlet-class>tp1.Servlet4</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Servlet4</servlet-name>
+		<url-pattern>/Servlet4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletTableauForm</servlet-name>
+		<servlet-class>tp1.ServletTableauForm</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ServletTableauForm</servlet-name>
+		<url-pattern>/formPerso</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+</web-app>
